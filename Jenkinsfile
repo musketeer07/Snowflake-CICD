@@ -11,7 +11,9 @@ pipeline{
 
     stage('Display git repo'){
       steps{
-        ls -l 
+        script{
+          sh 'ls -l'
+        }
       }
     }
   }
