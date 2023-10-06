@@ -1,16 +1,15 @@
-pipeline{
-  agent any
-
-  stages{
-    stage('Git Checkout'){
-      steps{
-        git 'https://github.com/musketeer07/Snowflake-CICD.git'
-      }
+pipeline {
+agent any
+stages {
+    stage("Git checkout") {
+        steps {
+            git 'https://github.com/AmolMandloi/junit-java-example.git'
+        }
     }
 
-    stage('Hello World'){
-      steps{
-        echo 'Hello'
+    stage("Postsonar") {
+        steps{
+            bat 'echo "All done"'
       }
     }
   }
