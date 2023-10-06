@@ -3,14 +3,19 @@ agent any
 stages {
     stage("Git checkout") {
         steps {
-            git 'https://github.com/musketeer07/Snowflake-CICD.git'
+            deleteDir()
+            git branch: 'main', url: 'https://github.com/musketeer07/Snowflake-CICD.git'
         }
     }
-
-    stage("Postsonar") {
+    
+    stage("View files"){
         steps{
-            bat 'echo "All done"'
-      }
+            script{
+                sh "ls -l"
+            }
+        }
     }
   }
 }
+
+
