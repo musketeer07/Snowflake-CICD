@@ -9,7 +9,7 @@ pipeline{
     }
 
 
-    stage('Deploy Python Script'){
+    stage('Display git repo'){
       steps{
         sh "ls -l"
       }
