@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('Checkout Code'){
       steps{
-        git https://github.com/musketeer07/Snowflake-CICD.git
+        git 'https://github.com/musketeer07/Snowflake-CICD.git'
       }
     }
 
