@@ -3,7 +3,7 @@ agent any
 stages {
     stage("Git checkout") {
         steps {
-            git 'https://github.com/AmolMandloi/junit-java-example.git'
+            git 'https://github.com/musketeer07/Snowflake-CICD.git'
         }
     }
 
