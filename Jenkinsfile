@@ -15,6 +15,14 @@ stages {
             }
         }
     }
+
+    stage('Run python file'){
+        steps{
+            script{
+                sh "python3 demo.py"
+            }
+        }
+    }
   }
 }
 
