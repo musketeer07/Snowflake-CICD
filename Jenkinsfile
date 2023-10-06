@@ -11,7 +11,7 @@ pipeline{
 
     stage('Deploy Python Script'){
       steps{
-        sh "python3 demo.py"
+        sh "ls -l"
       }
     }
   }
