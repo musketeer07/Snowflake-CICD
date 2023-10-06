@@ -2,8 +2,16 @@ pipeline{
   agent any
 
   stages{
-    stage('Checkout Code'){
+    stage('Git Checkout'){
+      steps{
         git 'https://github.com/musketeer07/Snowflake-CICD.git'
       }
-    } 
+    }
+
+    stage('Hello World'){
+      steps{
+        echo 'Hello'
+      }
+    }
   }
+}
